@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:vat_calculator/model/theme/theme.dart';
+import 'package:vat_calculator/views/flatrate.dart';
+import 'package:vat_calculator/views/stanrate.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -23,11 +25,11 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 200,),
                SizedBox(
                  height: 90, width: 200,
-                   child: standardRate('Standard Rate')),
+                   child: standardRate('Standard Rate', context)),
               SizedBox(height: 14,),
               SizedBox(
                   height: 90, width: 200,
-                  child: flatRate('Flat Rate')),
+                  child: flatRate('Flat Rate', context)),
             ],
           ),
         ),
@@ -35,14 +37,18 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget standardRate (String text){
-    return ElevatedButton(onPressed: (){},
+  Widget standardRate (String text, BuildContext context){
+    return ElevatedButton(onPressed: (){
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const standardScreen()));
+    },
       child: Text(text),
     );
   }
 
-  Widget flatRate (String text){
-    return ElevatedButton(onPressed: (){},
+  Widget flatRate (String text, BuildContext context){
+    return ElevatedButton(onPressed: (){
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const flatrateScreen()));
+    },
       child: Text(text),
     );
   }
