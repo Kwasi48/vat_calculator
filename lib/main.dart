@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vat_calculator/views/views.dart';
 
+import 'model/theme/theme.dart';
+
 void main() {
   runApp( const MainApp());
 }
@@ -10,9 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
+    return   MaterialApp(
+      theme: lightTheme,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

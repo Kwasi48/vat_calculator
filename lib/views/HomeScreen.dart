@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:vat_calculator/model/theme/theme.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -8,9 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('App Under Construction 🚧', style: TextStyle(
-          fontSize: 30,
-        ),),
+        child: Text('App Under Construction 🚧', style: lightTheme.textTheme.displayLarge),
       ),
     );
   }
