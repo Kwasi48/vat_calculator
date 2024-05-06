@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
-class VatTheme{
-  VatTheme._();
+ 
 
-  static ThemeData lightTheme = ThemeData(
-    useMaterial3 : true;
+
+
+final  lightTheme = ThemeData(
+      primaryColor: Colors.purple,
+      useMaterial3: true,
+      brightness: Brightness.light,
+  textTheme: TextTheme(
+    displayLarge: TextStyle( color: Colors.black, fontSize: 32, fontFamily: 'Abel' )
+  )
+
   );
-}
+
+
