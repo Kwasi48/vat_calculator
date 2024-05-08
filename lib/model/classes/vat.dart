@@ -30,9 +30,6 @@ class Vat {
 
 
 
-  double exclusive (){
-    //TODO: function for calculating exclusive standard vat
-    return 0.0;
-  }
+
 
 }
