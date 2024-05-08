@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('VAT CALCULATOR', style: lightTheme.textTheme.displayLarge,),
+        title: Text('Vat Calculator', style: lightTheme.textTheme.displayLarge,),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -20,11 +20,11 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              SizedBox(height: 200,),
+              const SizedBox(height: 200,),
                SizedBox(
                  height: 90, width: 200,
                    child: standardRate('Standard Rate', context)),
-              SizedBox(height: 14,),
+              const SizedBox(height: 14,),
               SizedBox(
                   height: 90, width: 200,
                   child: flatRate('Flat Rate', context)),
