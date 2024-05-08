@@ -10,6 +10,10 @@ class exclusiveTax extends StatefulWidget {
 class _exclusiveTaxState extends State<exclusiveTax> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
-  }
+    return Scaffold(
+        appBar: AppBar(),
+    body: const Center(
+    child: Text('things'),
+    ));
+    }
 }

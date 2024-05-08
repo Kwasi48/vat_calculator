@@ -10,6 +10,10 @@ class inclusiveTax extends StatefulWidget {
 class _inclusiveTaxState extends State<inclusiveTax> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+        appBar: AppBar(),
+    body: const Center(
+    child: Text('things'),
+    ),);
   }
 }
