@@ -3,9 +3,14 @@ import 'package:vat_calculator/views/inclusive.dart';
 
 import 'exclusive.dart';
 
-class standardScreen extends StatelessWidget {
+class standardScreen extends StatefulWidget {
   const standardScreen({super.key});
 
+  @override
+  State<standardScreen> createState() => _standardScreenState();
+}
+
+class _standardScreenState extends State<standardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +23,7 @@ class standardScreen extends StatelessWidget {
                 height: 90, width: 200,
                 child: inclusiveRate('Inclusive', context),
               ),
-              SizedBox(height: 14,),
+              const SizedBox(height: 14,),
               SizedBox(
                 height: 90, width: 200,
                 child:  exclusiveRate('Exclusive', context),
