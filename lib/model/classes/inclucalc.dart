@@ -11,10 +11,10 @@ class VatInclusive extends Vat{
     double vatTotal = vatAmount(gross as int, vat);
     double vatdeduct =  gross - vatTotal ;
     double nhilTax = (nhil + 6) * vatdeduct;
-    double getFundTax = (nhil + 6) * gross;
-    double covidTax = (nhil + 6) * gross;
+    double getFundTax = (nhil + 6) * vatdeduct;
+    double covidTax = (nhil + 6) * vatdeduct;
 
-    double totalTax = nhilTax + getFundTax + covidTax ;
+    double totalTax = nhilTax + getFundTax + covidTax + vatTotal ;
     return totalTax;
   }
 }
