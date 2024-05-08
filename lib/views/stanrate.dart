@@ -14,6 +14,9 @@ class _standardScreenState extends State<standardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -50,4 +53,6 @@ class _standardScreenState extends State<standardScreen> {
       child: Text(text),
     );
   }
+
+
 }

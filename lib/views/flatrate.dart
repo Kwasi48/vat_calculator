@@ -10,6 +10,11 @@ class flatrateScreen extends StatefulWidget {
 class _flatrateScreenState extends State<flatrateScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: Text('things'),
+      ),
+    );
   }
 }
