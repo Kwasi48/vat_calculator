@@ -15,13 +15,13 @@ class _standardScreenState extends State<standardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        title: Text('Standard Rate'),
       ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             children: <Widget>[
-              const SizedBox(height: 300,),
+              const SizedBox(height: 250,),
               SizedBox(
                 height: 90, width: 200,
                 child: inclusiveRate('Inclusive', context),
