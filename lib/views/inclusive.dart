@@ -30,7 +30,15 @@ class _inclusiveTaxState extends State<inclusiveTax> {
                   FormBuilderTextField(name: 'Gross Amount',
                   decoration: const InputDecoration(hintText: 'Enter gross amount',
                   labelText: 'Gross Amount'),
-                  keyboardType: TextInputType.number,)
+                  keyboardType: TextInputType.number,
+                  onChanged: (text){
+                    var inputed = double.tryParse(text!);
+                    if (inputed != null){
+                      setState(() {
+                        inputed = VatCal.gross;
+                      });
+                    }
+                  },)
                 ],
               ),
               )
