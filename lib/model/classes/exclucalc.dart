@@ -3,7 +3,7 @@
 import 'package:vat_calculator/model/classes/vat.dart';
 
 class VatExclusive extends Vat {
-  VatExclusive(super.nhil, super.getFund, super.covid, super.vat, {required super.gross});
+  VatExclusive(super.gross);
 
   double exclusive (){
     double nhilTax = nhil * gross;

@@ -3,7 +3,7 @@
 import 'package:vat_calculator/model/classes/vat.dart';
 
 class VatInclusive extends Vat{
-  VatInclusive(super.nhil, super.getFund, super.covid, super.vat, {required super.gross});
+  VatInclusive(super.gross);
 
 
 
