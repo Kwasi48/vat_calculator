@@ -12,7 +12,6 @@ class VatExclusive extends Vat {
 
     double addToGross = nhilTax + getFundTax + covidTax + gross;
     double vatTotal = vat * addToGross;
-
     double totalTax = nhilTax + getFundTax + covidTax +vatTotal;
 
     return totalTax;
