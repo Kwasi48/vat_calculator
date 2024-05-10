@@ -91,6 +91,7 @@ class _exclusiveTaxState extends State<exclusiveTax> {
     return ElevatedButton(
         onPressed: () {
           //input = VatCal.gross;
+
           VatExclusive exclusive = VatExclusive(input);
           setState(() {
             message = exclusive.exclusive(input).toString();

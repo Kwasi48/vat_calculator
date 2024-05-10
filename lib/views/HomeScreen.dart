@@ -28,6 +28,11 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                   height: 90, width: 200,
                   child: flatRate('Flat Rate', context)),
+              const SizedBox(height: 16,),
+              const SizedBox(
+                child: Text('NB: Use Standard Rate when Amount is 50,000 onwards',
+                ),
+              )
             ],
           ),
         ),
