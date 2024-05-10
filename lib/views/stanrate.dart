@@ -48,7 +48,7 @@ class _standardScreenState extends State<standardScreen> {
 
   Widget exclusiveRate (String text, BuildContext context){
     return ElevatedButton(onPressed: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const exclusiveTax()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => exclusiveTax()));
     },
       child: Text(text),
     );
