@@ -48,7 +48,7 @@ class _inclusiveTaxState extends State<inclusiveTax> {
                       var inputed = double.tryParse(text!);
                       if (inputed != null) {
                         setState(() {
-                           userInput = inputed;
+                          userInput = inputed;
                         });
                       }
                     },
@@ -64,7 +64,7 @@ class _inclusiveTaxState extends State<inclusiveTax> {
               width: 400,
               child: Card(
                 child: Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(60),
                   child: Text(
                     message!,
                     style: TextStyle(fontSize: 30),
