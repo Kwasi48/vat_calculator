@@ -14,7 +14,7 @@ class VatExclusive extends Vat {
     double vatTotal = vat * addToGross;
     double totalTax = nhilTax + getFundTax + covidTax +vatTotal;
 
-    return totalTax;
+    return totalTax.roundToDouble();
   }
 
 }
