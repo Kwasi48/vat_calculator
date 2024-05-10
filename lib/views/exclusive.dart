@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:vat_calculator/model/classes/vat.dart';
+//import 'package:vat_calculator/model/classes/vat.dart';
 
 import '../model/classes/exclucalc.dart';
 
@@ -19,7 +19,7 @@ class _exclusiveTaxState extends State<exclusiveTax> {
   double? userInput;
   String? message;
   final _formKeyex = GlobalKey<FormFieldState>();
-  Vat _vat = Vat();
+  //Vat _vat = Vat();
 
   @override
   void initState(){
