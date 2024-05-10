@@ -48,7 +48,7 @@ class _exclusiveTaxState extends State<exclusiveTax> {
                           var inputed = double.tryParse(text!);
                           if (inputed != null){
                             setState(() {
-
+                            userInput = inputed;
                             });
     }
                           }
