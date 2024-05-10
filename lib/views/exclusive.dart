@@ -68,19 +68,19 @@ class _exclusiveTaxState extends State<exclusiveTax> {
                   width: 400,
                   child: Card(
                     child: Container(
-                      padding: EdgeInsets.all(60),
+                      padding: const EdgeInsets.all(60),
                       child: Text(
                         message!,
-                        style: TextStyle(fontSize: 30),
+                        style: const TextStyle(fontSize: 30),
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 70,
                 ),
                 calculateInclusive('Compute', context, userInput!),
-                SizedBox(height: 100,)
+                const SizedBox(height: 100,)
               ],
             ),
           )
