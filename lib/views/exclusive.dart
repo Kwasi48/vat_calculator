@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
+import 'package:vat_calculator/model/classes/vat.dart';
 
-import '../model/classes/inclucalc.dart';
+import '../model/classes/exclucalc.dart';
+
 
 class exclusiveTax extends StatefulWidget {
    exclusiveTax({super.key});
@@ -18,6 +19,7 @@ class _exclusiveTaxState extends State<exclusiveTax> {
   double? userInput;
   String? message;
   final _formKeyex = GlobalKey<FormFieldState>();
+  Vat _vat = Vat();
 
   @override
   void initState(){
@@ -89,9 +91,9 @@ class _exclusiveTaxState extends State<exclusiveTax> {
     return ElevatedButton(
         onPressed: () {
           //input = VatCal.gross;
-          VatInclusive inclusive = VatInclusive(input);
+          VatExclusive exclusive = VatExclusive(input);
           setState(() {
-            message = inclusive.inclusive(input).toString();
+            message = exclusive.exclusive(input).toString();
           });
         },
         child: Text(text));
