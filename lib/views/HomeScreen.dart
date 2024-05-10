@@ -30,8 +30,13 @@ class HomeScreen extends StatelessWidget {
                   child: flatRate('Flat Rate', context)),
               const SizedBox(height: 16,),
               const SizedBox(
-                child: Text('NB: Use Standard Rate when Amount is 50,000 onwards',
-                ),
+                  child: Expanded(
+                    child: Text('NB: Use Standard Rate when Amount is 50,000 onwards.'
+                        ' Calculations may deviate a bit due to yearly Reviews of Rates.'
+                      ' Keep Application Updated to get accurate Calculations', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 20),
+                    ),
+                  ),
+
               )
             ],
           ),
