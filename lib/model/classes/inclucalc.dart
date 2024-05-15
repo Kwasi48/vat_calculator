@@ -9,10 +9,10 @@ class VatInclusive extends Vat{
 
   double inclusive (double gross){
     double vatTotal = vatAmount(gross, vat);
-    double vatdeduct =  gross - vatTotal ;
-    double nhilTax = (nhil ) * vatdeduct;
-    double getFundTax = (nhil ) * vatdeduct;
-    double covidTax = (nhil ) * vatdeduct;
+    double vatDeduct =  gross - vatTotal ;
+    double nhilTax = (nhil ) * vatDeduct;
+    double getFundTax = (getFund ) * vatDeduct;
+    double covidTax = (covid) * vatDeduct;
 
     double totalTax = nhilTax + getFundTax + covidTax + vatTotal ;
     return totalTax.roundToDouble();
