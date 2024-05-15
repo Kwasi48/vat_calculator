@@ -4,6 +4,8 @@ import 'package:vat_calculator/model/classes/vat.dart';
 
 class Flatcalc extends Vat{
 
+  Flatcalc(double gross);
+
   @override
   double vat = 3/100;
   @override
