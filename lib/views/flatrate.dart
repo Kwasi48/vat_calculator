@@ -53,6 +53,25 @@ class _flatrateScreenState extends State<flatrateScreen> {
 
                 ),
               ),
+              const SizedBox(height: 100,),
+              SizedBox(
+                height: 200,
+                width: 400,
+                child: Card(
+                  child: Container(
+                    padding: const EdgeInsets.all(60),
+                    child: Text(
+                      message!,
+                      style: const TextStyle(fontSize: 30),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 70,
+              ),
+              calculateInclusive('Compute', context, userInput!),
+              const SizedBox(height: 100,)
             ]
         ),
       ),
