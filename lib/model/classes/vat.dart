@@ -9,17 +9,17 @@ class Vat {
   double gross = 0.0 ;
 
   double nhilTaxAmount(double gross, nhil){
-    double nhilTax = (nhil + 6) * gross;
+    double nhilTax = (nhil) * gross;
     return nhilTax;
   }
 
   double getFundTaxAmount(double gross, getFund){
-    double getFundTax = (nhil + 6) * gross;
+    double getFundTax = (nhil) * gross;
     return getFundTax;
   }
 
   double covidTaxAmount(double gross, covid){
-    double covidTax = (covid + 6) * gross;
+    double covidTax = (covid) * gross;
     return covidTax;
   }
 
