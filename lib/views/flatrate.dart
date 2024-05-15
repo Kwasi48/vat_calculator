@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
+import 'package:vat_calculator/model/classes/flatcalc.dart';
 
 class flatrateScreen extends StatefulWidget {
   const flatrateScreen({super.key});
@@ -76,4 +77,17 @@ class _flatrateScreenState extends State<flatrateScreen> {
         ),
       ),
     );
-  }}
+  }
+  Widget calculateInclusive(String text, BuildContext context, double input) {
+    return ElevatedButton(
+        onPressed: () {
+          //input = VatCal.gross;
+
+          Flatcalc flatrate = Flatcalc(input);
+          setState(() {
+            message = flatrate.flatVat(input).toString();
+          });
+        },
+        child: Text(text));
+  }
+}
