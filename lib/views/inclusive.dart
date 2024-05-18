@@ -91,7 +91,7 @@ class _inclusiveTaxState extends State<inclusiveTax> {
           //input = VatCal.gross;
           VatInclusive inclusive = VatInclusive(input);
           setState(() {
-            message = inclusive.inclusive(input).toString();
+            message = inclusive.inclusive(input).toStringAsFixed(2);
           });
         },
         child: Text(text));

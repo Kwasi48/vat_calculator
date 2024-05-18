@@ -25,7 +25,9 @@ class _flatrateScreenState extends State<flatrateScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Flat Rate'),
+      ),
       body: SingleChildScrollView(
         child: Column(
             children: [

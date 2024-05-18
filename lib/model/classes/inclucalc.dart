@@ -15,6 +15,6 @@ class VatInclusive extends Vat{
     double covidTax = (covid) * vatDeduct;
 
     double totalTax = nhilTax + getFundTax + covidTax + vatTotal ;
-    return totalTax.roundToDouble();
+    return totalTax;
   }
 }
