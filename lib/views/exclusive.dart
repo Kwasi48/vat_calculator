@@ -94,7 +94,7 @@ class _exclusiveTaxState extends State<exclusiveTax> {
 
           VatExclusive exclusive = VatExclusive(input);
           setState(() {
-            message = exclusive.exclusive(input).toString();
+            message = exclusive.exclusive(input).toStringAsFixed(2);
           });
         },
         child: Text(text));
