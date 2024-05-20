@@ -14,6 +14,6 @@ class Flatcalc extends Vat{
   double flatVat (double gross){
     double allFlat = vat + covid;
     double totalFlat = allFlat * gross;
-    return totalFlat.roundToDouble();
+    return totalFlat;
   }
 }

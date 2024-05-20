@@ -87,7 +87,7 @@ class _flatrateScreenState extends State<flatrateScreen> {
 
           Flatcalc flatrate = Flatcalc(input);
           setState(() {
-            message = flatrate.flatVat(input).toString();
+            message = flatrate.flatVat(input).toStringAsFixed(2);
           });
         },
         child: Text(text));
